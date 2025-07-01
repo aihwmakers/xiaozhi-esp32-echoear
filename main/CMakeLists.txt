@@ -197,6 +197,8 @@ elseif(CONFIG_BOARD_TYPE_BREAD_COMPACT_WIFI_CAM)
     set(BOARD_TYPE "bread-compact-wifi-s3cam")
 elseif(CONFIG_BOARD_TYPE_JIUCHUAN )
     set(BOARD_TYPE "jiuchuan-s3")
+elseif(CONFIG_BOARD_TYPE_ECHOEAR )
+    set(BOARD_TYPE "esp-echoear")
 endif()
 file(GLOB BOARD_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/boards/${BOARD_TYPE}/*.cc
